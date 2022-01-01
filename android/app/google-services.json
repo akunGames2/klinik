@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "389720257142",
+    "project_id": "klinik-7dbd7",
+    "storage_bucket": "klinik-7dbd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389720257142:android:b23b044fec7cd652aca557",
+        "android_client_info": {
+          "package_name": "com.klinik.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389720257142-q7mbhh5dh3aorhi4b59qct9rhmfp7pbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO5O48vFiLJtNc-QjZ0XdVTNHJpPXEOdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389720257142-q7mbhh5dh3aorhi4b59qct9rhmfp7pbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389720257142:android:ff4e502477043d17aca557",
+        "android_client_info": {
+          "package_name": "com.klinikskripsi.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389720257142-msin250kl0sb242mhiaue7khicisv45d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.klinikskripsi.mobile",
+            "certificate_hash": "67fd6990994f49776aa0f91101e36b6e7d1f6624"
+          }
+        },
+        {
+          "client_id": "389720257142-q7mbhh5dh3aorhi4b59qct9rhmfp7pbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO5O48vFiLJtNc-QjZ0XdVTNHJpPXEOdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389720257142-q7mbhh5dh3aorhi4b59qct9rhmfp7pbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

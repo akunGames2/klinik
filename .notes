@@ -1,0 +1,49 @@
+==== error: cannot find symbol import android.support.v4.app.ActivityCompat ====
+find android.support.v4.app.ActivityCompat 
+replace with androidx.core.app.ActivityCompat
+
+
+===Process 'command '../../node_modules/hermesvm/linux64-bin/hermes'' finished with non-zero exit value 135===
+1. Copy react.gradle from node_modules/react-native to android/app
+2. In the copied react.gradle Replace the line starting commandLine(getHermesCommand(),... with:
+ant.move(
+    file: jsBundleFile,
+    tofile: "${jsBundleFile}_temp"
+);
+commandLine(getHermesCommand(), "-emit-binary", "-out", jsBundleFile, "${jsBundleFile}_temp", *hermesFlags)
+
+3. Below this (outside the exec section around commandLine(getHermesCommand(),...) add this:
+ant.delete(
+    file: "${jsBundleFile}_temp"
+);
+
+4. edit app/build.gradle
+change apply from: "../../node_modules/react-native/react.gradle"
+with apply from: "./react.gradle"
+
+5. ./gradlew clean
+6. ./gradlew assembleRelease
+
+==== bug metro server close after install app on device ====\
+1. find file blacklist.js on /node_modules/metro-config/src/default
+2. replace line
+var sharedBlacklist = [
+  /node_modules[/\\]react[/\\]dist[/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+];
+
+with
+
+var sharedBlacklist = [
+  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+  ];
+
+
+
+==== build apk ====
+  https://stackoverflow.com/questions/62463605/what-is-the-correct-way-to-build-signed-release-apk-in-react-native

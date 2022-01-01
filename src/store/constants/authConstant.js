@@ -1,0 +1,5 @@
+export const authConstant = {
+  SET_AUTH_DATA: 'SET_AUTH_DATA',
+  SET_PROFILE_DATA: 'SET_PROFILE_DATA',
+  UPDATE_NEW_MAIL: 'UPDATE_NEW_MAIL',
+}
